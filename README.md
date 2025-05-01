@@ -26,8 +26,17 @@ To build a machine learning model that predicts whether a motor vehicle collisio
 
 accuracy                           0.73    140715
 
+### 2. Random Forest Classifier
+       precision    recall  f1-score   support
 
-### 2. LightGBM Classifier
+       0       0.75      0.80      0.78    102926
+       1       0.35      0.29      0.32     37789
+
+accuracy                           0.66    140715
+   
+
+
+### 3. LightGBM Classifier
        precision    recall  f1-score   support
 
        0       0.85      0.47      0.60    102926
@@ -36,7 +45,7 @@ accuracy                           0.73    140715
 accuracy                           0.55    140715
 
 
-### 3. XGBoost Classifier
+### 4. XGBoost Classifier
        precision    recall  f1-score   support
 
        0       0.818     0.585     0.682    102926
