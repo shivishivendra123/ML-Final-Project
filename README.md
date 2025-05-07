@@ -110,7 +110,7 @@ In this project:
 - The data is **imbalanced** (non-serious crashes far outnumber serious ones)
 - **Accuracy alone is misleading** — a model could achieve 73% accuracy by predicting all zeros
 - Our focus is on **Recall for Class 1 (Serious Crashes)**:
-  - XGBoost achieves **64.6% recall**, meaning it identifies **~2 out of 3 serious crashes**
+- LGBM achieves **77% recall**, meaning it identifies **~2 out of 3 serious crashes**
 - This helps **minimize missed high-risk cases**, which is critical for emergency response
 
 Some loss in precision is acceptable in safety-critical applications — **it's better to over-alert than to miss real danger**.
@@ -119,7 +119,7 @@ Some loss in precision is acceptable in safety-critical applications — **it's 
 
 ## Key Findings
 
-- **XGBoost outperforms LightGBM** in overall **F1-score** and **accuracy**, while still maintaining good recall for serious crashes (65%).
+- **LightGBM** performs well overall **F1-score** and **accuracy**, while still maintaining good recall for serious crashes (77%).
 - **Recall is prioritized** over accuracy to ensure serious crashes are not missed.
 - Engineered features like `IS_BIKE_INVOLVED`, `IS_LATE_NIGHT`, `BOROUGH_STREET_RISK`, `IS_WEEKEND`, `DAY_OF_WEEK`, and `CONTRIBUTING_FACTOR_VEHICLE_1` significantly helped improve model performance.
 
@@ -136,7 +136,7 @@ Some loss in precision is acceptable in safety-critical applications — **it's 
 ## Conclusion
 
 - The serious crash prediction model successfully identifies over 60% of serious crashes in real time.
-- **XGBoost is recommended** for deployment due to better generalization and balanced performance.
+- **LGBM is recommended** for deployment due to better generalization and and good recall.
 - This model provides the DOT with a **data-driven, proactive tool** for reducing injuries and saving lives.
 
 ---
