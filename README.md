@@ -146,4 +146,17 @@ Some loss in precision is acceptable in safety-critical applications — **it's 
 - Integrate the model into real-time traffic systems  
 - Visualize predictions on interactive maps using `folium`  
 - Extend to multi-label injury prediction (pedestrian vs cyclist vs motorist)  
-- Collaborate with city planners to deploy model insights on the ground  
+- Collaborate with city planners to deploy model insights on the ground
+
+---
+
+## Cluster centriods for (lat,long) crash regions
+![image](https://github.com/user-attachments/assets/ef56cf70-2c8d-4951-bd4e-296a98ff57eb)
+
+---
+
+## Link to live simulation for serious crash detection
+[Live Simulation](https://huggingface.co/spaces/meruem123/Serious_crash_detection_simulation)
+
+
+
